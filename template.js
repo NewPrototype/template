@@ -42,8 +42,7 @@ class {{ template }} extends React.Component {
 
 const mapStateToProps = state => {
   return {
-    types: state.keeprecord.types,
-    buttonArr: state.app.permission_buttons,
+
   }
 }
 
