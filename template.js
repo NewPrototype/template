@@ -12,6 +12,10 @@ const mapDispatchToProps = (dispatch) => {
   return {}
 }
 
+@connect(
+  mapStateToProps,
+  mapDispatchToProps
+)
 class {{template}} extends React.Component {
   constructor(props) {
     super(props);
@@ -48,8 +52,3 @@ class {{template}} extends React.Component {
   }
 }
 
-
-
-
-
-export default connect(mapStateToProps)({{template}});
