@@ -2,7 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './{{template}}.styl';
 
-class {{ template }} extends React.Component {
+const mapStateToProps = state => {
+  return {
+
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {}
+}
+
+class {{template}} extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -40,14 +50,6 @@ class {{ template }} extends React.Component {
 
 
 
-const mapStateToProps = state => {
-  return {
 
-  }
-}
 
-function mapDispatchToProps(dispatch) {
-  return {}
-}
-
-export default connect(mapStateToProps)({{ template }});
+export default connect(mapStateToProps)({{template}});
