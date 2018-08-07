@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './{{template}}.styl';
 
-export default class {{template}} extends React.Component {
+class {{ template }} extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      
+
     };
   }
 
@@ -37,3 +37,18 @@ export default class {{template}} extends React.Component {
     );
   }
 }
+
+
+
+const mapStateToProps = state => {
+  return {
+    types: state.keeprecord.types,
+    buttonArr: state.app.permission_buttons,
+  }
+}
+
+function mapDispatchToProps(dispatch) {
+  return {}
+}
+
+export default connect(mapStateToProps)({{ template }});
