@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { withRouter } from 'react-router-dom';
+import {connect} from 'react-redux'
 import './{{template}}.styl';
 
 const mapStateToProps = state => {
@@ -12,6 +14,7 @@ const mapDispatchToProps = (dispatch) => {
   return {}
 }
 
+@withRouter
 @connect(
   mapStateToProps,
   mapDispatchToProps
@@ -50,5 +53,13 @@ class {{template}} extends React.Component {
       </div>
     );
   }
+}
+
+{{template}}.propTypes={
+  
+}
+
+{{template}}.defaultProps={
+
 }
 
