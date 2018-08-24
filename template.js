@@ -63,3 +63,5 @@ class {{template}} extends React.Component {
 
 }
 
+export default {{template}}
+
