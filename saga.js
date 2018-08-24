@@ -6,7 +6,7 @@ import * as Fetch from 'lib/server';
  * 测试用例
  */
 let target_common_methods = function*() {
-  yield callTakeLatest(Act.TARGET_COMMON_METHODS, function*(action) {
+  yield callTakeEvery(Act.TARGET_COMMON_METHODS, function*(action) {
     let data = yield call(Fetch.target_list_init, action.params);
     if (data) {
       action.cb && action.cb(data);
